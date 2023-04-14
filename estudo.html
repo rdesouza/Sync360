@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meu perfil</title>
+
+  <!-- CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    .container {
+      padding: 50px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+ 
+    <form class="">
+    <div class="container border-0">  
+      <fieldset disabled="disabled">
+        <div class="form-group border">
+          <img src="24964944.jpg" class="rounded-circle float-right mr-4" id="foto_perfil" width="200px">  <h1 class="display-3 mt-5 text-primary">Cadastro</h1>
+          <br>
+          Nome:
+          <label for="nome"></label>
+          <input type="text" class="form-control" id="lbl_nome" value=" Roger de Souza Rocha"placeholder="Seu Nome">
+        </div>
+        <div class="form-group">
+          <label for="idade">Idade:</label>
+          <input type="text" class="form-control" id="lbl_idade" value ="29 anos" placeholder="Sua idade">
+        </div>
+        <div class="form-group">
+          <label for="localizacao">Localização:</label>
+          <input type="text" class="form-control" id="lbl_localizacao" value="Belo Horizonte" placeholder="Sua localização">
+        </div>
+        <label for="biografia">Biografia</label>
+        <textarea class=" container " id="txtA_biografia" cols="93" rows="10" value="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem sit temporibus! Dicta iure, in facere perspiciatis eius nisi soluta consequuntur eligendi, reprehenderit ea optio architecto. Quisquam dolores doloremque soluta?
+
+        </textarea>
+      </fieldset>
+
+
+
+    </form>
+    <br>
+
+<hr class="border border-secondary border-2 opacity-50">
+    <form>
+      <h1 class="display-4 mt-5 text-primary">Alterar Dados Cadastrais</h1>
+      Nome <br>
+      <div class="row  m-1">
+
+        <label for="nome"></label>
+        <input type="text" class="form-control col" id="lbl_atualiza_nome">
+      </div>
+      <div class="form-group ">
+        <label for="idade">Idade:</label>
+        <input type="text" class="form-control col" id="lbl_atualiza_idade" >
+      </div>
+      <div class="form-group ">
+        <label for="localizacao">Localização:</label>
+        <input type="text" class="form-control col" id="lbl_atualiza_localizacao">
+      </div>
+       
+      <label for="biografia">Biografia</label>
+      <textarea class=" container" id="txtA_atualiza_biografia" cols="93" rows="10"></textarea>
+      <button onclick="enviar()" class="btn btn-outline-primary ">Salvar</button>
+      
+
+  </div>
+  </form>
+  </div>
+
+
+
+  <!-- Bootstrap JavaScript e jQuery (necessários para alguns componentes do Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
